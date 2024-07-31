@@ -79,7 +79,16 @@ export default function IndexPage() {
             {(set) => <SelectItem>{set.key}</SelectItem>}
           </Select>
 
-          <Input size="md" type="text" label="Enter Token" placeholder="ABCXYZ" variant="faded" onValueChange={changeInputValue} value={inputToken} onKeyDown={changeKeyDown} />
+          <Input
+            size="md"
+            type="text"
+            label="Enter Token"
+            placeholder="ABCXYZ"
+            variant="faded"
+            onValueChange={changeInputValue}
+            value={inputToken}
+            onKeyDown={changeKeyDown}
+            isClearable />
 
           <Button color="success" variant="shadow" onPress={onOpen}>
             Submit
